@@ -1,6 +1,7 @@
 qualitis
 
-参考了(Qualitis)https://github.com/WeBankFinTech/Qualitis,做了一个简易版的。
+参考了(Qualitis)https://github.com/WeBankFinTech/Qualitis~~~~~~~~
+做了一个简易版的。
 
 
 
