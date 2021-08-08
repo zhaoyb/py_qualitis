@@ -1,2 +1,29 @@
-# py_qualitis
-python版数据质量检查
+qualitis
+
+参考了(Qualitis)https://github.com/WeBankFinTech/Qualitis,做了一个简易版的。
+
+
+
+第一步：
+新建数据库：qualitis
+
+第二步
+新建表：
+``` sql
+DROP TABLE IF EXISTS `qualitis_result`;
+CREATE TABLE `qualitis_result`  (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT '',
+  `value` double NULL DEFAULT NULL,
+  `create_time` datetime(0) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `name_createtime`(`name`, `create_time`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
+
+SET FOREIGN_KEY_CHECKS = 1;
+```
+
+第三步：
+```shell
+sh run.sh
+```
