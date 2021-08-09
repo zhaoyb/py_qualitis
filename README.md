@@ -1,6 +1,11 @@
 qualitis
 
-参考了(Qualitis)https://github.com/WeBankFinTech/Qualitis~~~~~~~~
+Python版的数据质量管理
+支持对hive、 sql server、mysql数据源进行检查。
+检测方式，包括月平均，周平均， 日平均，固定值。
+
+
+参考了(Qualitis)https://github.com/WeBankFinTech/Qualitis<br/>
 做了一个简易版的。
 
 
